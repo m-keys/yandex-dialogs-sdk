@@ -58,6 +58,9 @@ export class Reply {
       const extraParams = ExtraParamsBuilder.createExtraParams(
         extraParamsDeclaration,
       );
+      if (extraParams.tts) {
+        result.tts = extraParams.tts;
+      }
       if (extraParams.buttons) {
         result.buttons = extraParams.buttons;
       }
@@ -85,6 +88,9 @@ export class Reply {
       const extraParams = ExtraParamsBuilder.createExtraParams(
         extraParamsDeclaration,
       );
+      if (extraParams.tts) {
+        result.tts = extraParams.tts;
+      }
       if (extraParams.buttons) {
         result.buttons = extraParams.buttons;
       }
